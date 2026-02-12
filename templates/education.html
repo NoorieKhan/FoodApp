@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn About Food & Poverty</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Understanding Food Insecurity</h1>
+
+    <img src="{{ url_for('static', filename='/poverty1.jpg') }}" >
+    <img src="{{ url_for('static', filename='/poverty2.jpg') }}">
+    <img src="{{ url_for('static', filename='/poverty3.jpg') }}">
+
+    <div class="education-text">
+        <p>
+            Every year, millions of people around the world struggle with hunger and lack access to nutritious food.
+            Reducing food waste plays a crucial role in helping communities become more sustainable and self-reliant.
+        </p>
+
+        <p>
+            By donating leftovers, volunteering, or raising awareness, you’re making a difference in ensuring
+            that no meal goes to waste. Together, we can fight hunger!
+        </p>
+
+        <h3>How You Can Help</h3>
+        <ul>
+            <li>Donate extra food to local drives</li>
+            <li>Spread awareness about hunger in your community</li>
+            <li>Volunteer at food banks or shelters</li>
+            <li>Support local organizations (like this one!) and learn more about food insecurity</li>
+        </ul>
+    </div>
+
+    <a href="{{ url_for('index') }}">⬅ Back to List</a>
+</body>
+</html>
